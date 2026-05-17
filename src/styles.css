@@ -62,9 +62,9 @@ body {
   line-height: 1.55;
   font-feature-settings: "ss01", "ss02";
   overflow-x: hidden;
-  user-select: none;
 }
 input, textarea, select { user-select: text; }
+.pf-thumb, .hero-showcase { user-select: none; }
 p { margin: 0 0 1em 0; }
 h1, h2, h3, h4 { margin: 0; }
 
@@ -498,9 +498,11 @@ body.entrance .hero-scroll        { animation: heroFade   0.8s var(--ease-out) 1
 }
 .hero-cta.secondary {
   color: rgba(255,255,255,0.9);
+  border: 1px solid rgba(255,255,255,0.35);
 }
 .hero-cta.secondary:hover {
   color: #fff;
+  border-color: rgba(255,255,255,0.7);
 }
 
 
@@ -1019,19 +1021,19 @@ body.entrance .hero-scroll        { animation: heroFade   0.8s var(--ease-out) 1
 }
 .thumb-warung-corner {
   position: absolute;
-  width: 36px; height: 36px;
+  width: clamp(16px, 9cqi, 36px); height: clamp(16px, 9cqi, 36px);
   border: 1.5px solid rgba(212,160,74, 0.45);
 }
-.thumb-warung-corner.tl { top: 16px; left: 16px; border-right: none; border-bottom: none; }
-.thumb-warung-corner.tr { top: 16px; right: 16px; border-left: none; border-bottom: none; }
-.thumb-warung-corner.bl { bottom: 16px; left: 16px; border-right: none; border-top: none; }
-.thumb-warung-corner.br { bottom: 16px; right: 16px; border-left: none; border-top: none; }
+.thumb-warung-corner.tl { top: clamp(8px, 4.5cqi, 16px); left: clamp(8px, 4.5cqi, 16px); border-right: none; border-bottom: none; }
+.thumb-warung-corner.tr { top: clamp(8px, 4.5cqi, 16px); right: clamp(8px, 4.5cqi, 16px); border-left: none; border-bottom: none; }
+.thumb-warung-corner.bl { bottom: clamp(8px, 4.5cqi, 16px); left: clamp(8px, 4.5cqi, 16px); border-right: none; border-top: none; }
+.thumb-warung-corner.br { bottom: clamp(8px, 4.5cqi, 16px); right: clamp(8px, 4.5cqi, 16px); border-left: none; border-top: none; }
 
 .thumb-warung .wm {
   position: absolute; inset: 0;
   display: flex; flex-direction: column; justify-content: center; align-items: center;
   text-align: center;
-  padding: 16px;
+  padding: clamp(8px, 4cqi, 16px);
 }
 .thumb-warung .wm .est {
   font-family: "IBM Plex Mono"; font-size: 10px;
@@ -1049,20 +1051,20 @@ body.entrance .hero-scroll        { animation: heroFade   0.8s var(--ease-out) 1
 .thumb-warung .wm .stamp .amp { color: #e4b863; font-style: italic; }
 .thumb-warung .wm .ornament {
   color: #d4a04a;
-  font-size: 18px;
-  margin: 8px 0;
+  font-size: clamp(10px, 4.5cqi, 18px);
+  margin: clamp(3px, 2cqi, 8px) 0;
   font-family: "DM Serif Display", serif;
 }
 .thumb-warung .wm .dots {
   display: inline-flex; gap: 6px;
-  margin-top: 12px;
+  margin-top: clamp(4px, 3cqi, 12px);
 }
 .thumb-warung .wm .dots span {
   width: 4px; height: 4px; border-radius: 50%;
   background: #d4a04a;
 }
 .thumb-warung .wm .tag {
-  margin-top: 14px;
+  margin-top: clamp(4px, 3.5cqi, 14px);
   font-family: "IBM Plex Mono"; font-size: 9.5px;
   letter-spacing: 0.34em; color: rgba(243,227,196,0.42);
 }
@@ -1086,8 +1088,8 @@ body.entrance .hero-scroll        { animation: heroFade   0.8s var(--ease-out) 1
   border-radius: 50%;
   border: 1.5px solid rgba(37,99,235, 0.55);
 }
-.thumb-laundry .b.b1 { width: 120px; height: 120px; left: -28px; top: 16px; opacity: 0.5; }
-.thumb-laundry .b.b2 { width: 64px;  height: 64px;  right: 38px; top: 110px; opacity: 0.6; }
+.thumb-laundry .b.b1 { width: clamp(48px, 38cqi, 120px); height: clamp(48px, 38cqi, 120px); left: -28px; top: 16px; opacity: 0.5; }
+.thumb-laundry .b.b2 { width: clamp(28px, 18cqi, 64px);  height: clamp(28px, 18cqi, 64px);  right: 10%; top: 60%; opacity: 0.6; }
 .thumb-laundry .b.b3 { width: 28px;  height: 28px;  right: 90px; top: 28px; background: rgba(37,99,235, 0.10); }
 .thumb-laundry .b.b4 { width: 14px;  height: 14px;  right: 30px; top: 60px; background: var(--blue); border-color: transparent; }
 .thumb-laundry .b.b5.dot { width: 6px; height: 6px; right: 18px; top: 90px; background: var(--blue); border-color: transparent; }
@@ -1095,7 +1097,7 @@ body.entrance .hero-scroll        { animation: heroFade   0.8s var(--ease-out) 1
 .thumb-laundry .wm {
   position: absolute; inset: 0;
   display: flex; flex-direction: column; justify-content: center;
-  padding: 0 28px;
+  padding: 0 clamp(12px, 6cqi, 28px);
 }
 .thumb-laundry .wm .lab {
   display: inline-flex; align-items: center; gap: 8px;
@@ -1119,16 +1121,16 @@ body.entrance .hero-scroll        { animation: heroFade   0.8s var(--ease-out) 1
 }
 .thumb-laundry .wm .sub {
   font-family: "DM Sans"; font-weight: 500;
-  font-size: 12.5px; margin-top: 14px;
+  font-size: clamp(8px, 3.2cqi, 12.5px); margin-top: clamp(6px, 3.5cqi, 14px);
   color: rgba(17,17,17,0.5);
   letter-spacing: -0.005em;
 }
 .thumb-laundry-pricetag {
   position: absolute;
-  right: 22px; bottom: 22px;
+  right: clamp(10px, 5cqi, 22px); bottom: clamp(10px, 5cqi, 22px);
   background: var(--ink);
   color: #fff;
-  padding: 12px 14px;
+  padding: clamp(5px, 2.8cqi, 12px) clamp(7px, 3.5cqi, 14px);
   border-radius: 2px;
   text-align: right;
   z-index: 1;
@@ -1140,7 +1142,7 @@ body.entrance .hero-scroll        { animation: heroFade   0.8s var(--ease-out) 1
 }
 .thumb-laundry-pricetag .pt-num {
   font-family: "DM Sans"; font-weight: 800;
-  font-size: 22px; line-height: 1; letter-spacing: -0.02em;
+  font-size: clamp(12px, 5cqi, 22px); line-height: 1; letter-spacing: -0.02em;
   margin-top: 4px;
 }
 .thumb-laundry-pricetag .pt-num span {
@@ -1179,7 +1181,7 @@ body.entrance .hero-scroll        { animation: heroFade   0.8s var(--ease-out) 1
   position: absolute; inset: 0;
   display: flex; flex-direction: column; justify-content: center; align-items: center;
   text-align: center;
-  padding: 24px;
+  padding: clamp(12px, 5cqi, 24px);
 }
 .thumb-batik .wm .top {
   font-family: "IBM Plex Mono"; font-size: 9.5px;
@@ -1189,19 +1191,19 @@ body.entrance .hero-scroll        { animation: heroFade   0.8s var(--ease-out) 1
 .thumb-batik .wm .top.sub { color: rgba(241,216,150,0.45); }
 .thumb-batik .wm .rule {
   width: 36px; height: 1px; background: #daa520;
-  margin: 14px 0 6px 0;
+  margin: clamp(6px, 3cqi, 14px) 0 clamp(3px, 1.5cqi, 6px) 0;
 }
 .thumb-batik .wm .name {
   font-family: "DM Serif Display", "DM Sans", serif;
   font-weight: 400; font-style: italic;
   font-size: clamp(0.8rem, 11cqi, 4.2rem);
   letter-spacing: -0.005em; line-height: 0.95;
-  margin: 8px 0 14px 0;
+  margin: clamp(4px, 2cqi, 8px) 0 clamp(6px, 3cqi, 14px) 0;
   text-shadow: 0 0 20px rgba(218,165,32, 0.2);
 }
 .thumb-batik .wm .dot-row {
-  display: inline-flex; gap: 12px;
-  margin: 0 0 14px 0;
+  display: inline-flex; gap: clamp(5px, 2.5cqi, 12px);
+  margin: 0 0 clamp(6px, 3cqi, 14px) 0;
 }
 .thumb-batik .wm .dot-row .dot {
   width: 5px; height: 5px; border-radius: 50%;
@@ -1236,7 +1238,7 @@ body.entrance .hero-scroll        { animation: heroFade   0.8s var(--ease-out) 1
 .thumb-bengkel .accent-block {
   position: absolute;
   right: -30px; top: -30px;
-  width: 180px; height: 180px;
+  width: clamp(70px, 45cqi, 180px); height: clamp(70px, 45cqi, 180px);
   background: var(--blue);
   transform: rotate(45deg);
 }
@@ -1247,12 +1249,12 @@ body.entrance .hero-scroll        { animation: heroFade   0.8s var(--ease-out) 1
   opacity: 0.5;
 }
 .thumb-bengkel-bolt { right: 24px; top: 24px; }
-.thumb-bengkel-bolt.b2 { right: auto; top: auto; left: 24px; bottom: 64px; opacity: 0.7; }
+.thumb-bengkel-bolt.b2 { right: auto; top: auto; left: clamp(12px, 6cqi, 24px); bottom: clamp(24px, 20%, 64px); opacity: 0.7; }
 
 .thumb-bengkel .wm {
   position: absolute; inset: 0;
   display: flex; flex-direction: column; justify-content: center;
-  padding: 0 28px;
+  padding: 0 clamp(12px, 6cqi, 28px);
   z-index: 1;
 }
 .thumb-bengkel .wm .id {
@@ -1277,12 +1279,12 @@ body.entrance .hero-scroll        { animation: heroFade   0.8s var(--ease-out) 1
   font-size: 0.65em; font-weight: 700; letter-spacing: -0.025em;
 }
 .thumb-bengkel .wm .rule {
-  margin-top: 16px;
-  width: 56px; height: 3px; background: #fff;
+  margin-top: clamp(8px, 4cqi, 16px);
+  width: clamp(24px, 14cqi, 56px); height: 3px; background: #fff;
 }
 .thumb-bengkel .wm .badges {
-  display: inline-flex; gap: 8px;
-  margin-top: 18px;
+  display: inline-flex; gap: clamp(4px, 2cqi, 8px);
+  margin-top: clamp(8px, 4.5cqi, 18px);
 }
 .thumb-bengkel .wm .badge {
   font-family: "IBM Plex Mono"; font-size: 9.5px;
@@ -1540,6 +1542,22 @@ body.entrance .hero-scroll        { animation: heroFade   0.8s var(--ease-out) 1
   transition: border-color 0.2s;
 }
 .wa-card .ig:hover { border-color: var(--blue); }
+
+/* Form column — subordinate to the WA card */
+.contact-form-col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contact-form-alt {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 10.5px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(17,17,17,0.38);
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--line);
+}
 
 /* Form */
 .form {

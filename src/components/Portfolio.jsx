@@ -69,16 +69,10 @@ export function Portfolio() {
   return (
     <section id="portfolio" className="portfolio">
       <div className="wrap">
-        <Reveal className="section-head pf-head">
-          <div className="pf-head-left">
-            <div className="overline">{c.portfolio.overline}</div>
-            <h2 className="h2">{c.portfolio.title}</h2>
-            <p className="sub">{c.portfolio.sub}</p>
-          </div>
-          <div className="pf-head-right">
-            <div className="pf-count">{String(total).padStart(2, '0')} <span>{c.portfolio.countLabel}</span></div>
-            <p className="pf-disclaimer">{c.portfolio.disclaimer}</p>
-          </div>
+        <Reveal className="section-head">
+          <div className="overline">{c.portfolio.overline}</div>
+          <h2 className="h2">{c.portfolio.title}</h2>
+          <p className="sub">{c.portfolio.sub}</p>
         </Reveal>
 
         <div className="pf-grid">

@@ -178,7 +178,10 @@ export function Contact() {
           </Reveal>
 
           <Reveal delay={2}>
-            <ContactForm />
+            <div className="contact-form-col">
+              <div className="contact-form-alt">{c.contact.formAlt}</div>
+              <ContactForm />
+            </div>
           </Reveal>
         </div>
       </div>

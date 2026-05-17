@@ -40,9 +40,8 @@ export const COPY = {
     portfolio: {
       overline: 'KARYA KAMI',
       title: 'Portofolio.',
-      sub: 'Mock-up konsep untuk usaha lokal Solo.',
+      sub: 'Proyek konsep — tampilan nyata, klien fiksi.',
       countLabel: 'PROJECTS',
-      disclaimer: '* Semua karya berikut adalah konsep mock-up yang dibuat sebagai demonstrasi — bukan klien aktif. Sengaja kami tampilkan apa adanya.',
       cta: 'Punya usaha yang butuh tampilan baru?',
       waBtn: 'Tertarik layanan ini?',
       waMsg: 'Halo elictive.id, saya tertarik dengan layanan {tag} seperti {title}.',
@@ -89,7 +88,8 @@ export const COPY = {
         teleponHint: 'Contoh: 0812-3456-7890',
         errorWa: 'Atau chat langsung di WhatsApp'
       },
-      waMsg: 'Halo elictive.id, saya tertarik dengan layanan kalian.'
+      waMsg: 'Halo elictive.id, saya tertarik dengan layanan kalian.',
+      formAlt: 'Atau, tulis pesanmu di sini'
     },
     footer: {
       copy: 'Semua hak dilindungi.',
@@ -131,9 +131,8 @@ export const COPY = {
     portfolio: {
       overline: 'OUR WORK',
       title: 'Portfolio.',
-      sub: 'Concept mock-ups for local Solo businesses.',
+      sub: 'Concept projects — real craft, fictional clients.',
       countLabel: 'PROJECTS',
-      disclaimer: '* Every piece below is a concept mock-up made as a demonstration — not active clients. We show our work openly.',
       cta: 'Got a business that needs a new look?',
       waBtn: 'Interested in this?',
       waMsg: "Hi elictive.id, I'm interested in {tag} like {title}.",
@@ -180,7 +179,8 @@ export const COPY = {
         teleponHint: 'Example: 0812-3456-7890',
         errorWa: 'Or chat with us on WhatsApp'
       },
-      waMsg: "Hi elictive.id, I'm interested in your services."
+      waMsg: "Hi elictive.id, I'm interested in your services.",
+      formAlt: 'Or, write to us below'
     },
     footer: {
       copy: 'All rights reserved.',
