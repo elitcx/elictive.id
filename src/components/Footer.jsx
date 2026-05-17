@@ -32,6 +32,12 @@ export function Footer() {
           >
             @{CONFIG.instagramHandle}
           </a>
+          <a
+            href="https://elitcxportfolio.vercel.app/"
+            target="_blank" rel="noreferrer"
+          >
+            {c.footer.portfolio}
+          </a>
         </div>
       </div>
     </footer>

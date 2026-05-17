@@ -54,6 +54,7 @@ export const COPY = {
       p1: 'elictive.id adalah personal brand dan studio digital berbasis di Solo, Jawa Tengah. Kami membantu usaha kecil dan menengah tampil profesional di dunia digital — dari logo, desain media sosial, hingga website.',
       p2: 'Didirikan oleh seorang anak muda Solo yang percaya bahwa UMKM lokal layak punya tampilan digital yang serius.',
       pAlt: 'elictive.id is a Solo-based digital studio helping local UMKM look professional online — from branding to websites.',
+      portfolioLink: 'Lihat portofolio pribadi →',
       panelHead: 'PRINSIP',
       panelId: 'FILE · 01 / 26',
       panelFoot: 'SOLO · JAWA TENGAH',
@@ -92,7 +93,8 @@ export const COPY = {
     },
     footer: {
       copy: 'Semua hak dilindungi.',
-      city: 'Solo, Jawa Tengah, Indonesia'
+      city: 'Solo, Jawa Tengah, Indonesia',
+      portfolio: 'Portofolio Pribadi'
     }
   },
   en: {
@@ -143,6 +145,7 @@ export const COPY = {
       p1: 'elictive.id is a personal brand and digital studio based in Solo, Central Java. We help small businesses look professional online — from logos to social media design to websites.',
       p2: 'Founded by a young creative from Solo who believes local businesses deserve a digital presence that feels serious.',
       pAlt: 'elictive.id adalah studio digital di Solo yang membantu UMKM lokal tampil profesional online — dari branding hingga website.',
+      portfolioLink: 'View personal portfolio →',
       panelHead: 'PRINCIPLES',
       panelId: 'FILE · 01 / 26',
       panelFoot: 'SOLO · CENTRAL JAVA',
@@ -181,7 +184,8 @@ export const COPY = {
     },
     footer: {
       copy: 'All rights reserved.',
-      city: 'Solo, Central Java, Indonesia'
+      city: 'Solo, Central Java, Indonesia',
+      portfolio: 'Personal Portfolio'
     }
   }
 };

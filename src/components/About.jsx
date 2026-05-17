@@ -37,6 +37,14 @@ export function About() {
           <p style={{ marginTop: 28 }}>{a.p1}</p>
           <p>{a.p2}</p>
           <p className="en">{a.pAlt}</p>
+          <a
+            href="https://elitcxportfolio.vercel.app/"
+            target="_blank"
+            rel="noreferrer"
+            className="about-portfolio-link"
+          >
+            {a.portfolioLink}
+          </a>
         </Reveal>
 
         <div className="about-right" ref={rightRef}>
