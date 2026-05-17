@@ -849,8 +849,8 @@ body.entrance .hero-scroll        { animation: heroFade   0.8s var(--ease-out) 1
 
 .pf-card {
   position: relative;
-  background: #fff;
-  border: 1px solid var(--line);
+  background: color-mix(in srgb, var(--card-accent, #fff) 6%, #fff);
+  border: 1px solid color-mix(in srgb, var(--card-accent, var(--line)) 14%, var(--line));
   cursor: default;
   transition: box-shadow 0.4s var(--ease-out), border-color 0.3s var(--ease-out);
   display: flex; flex-direction: column;
@@ -858,7 +858,7 @@ body.entrance .hero-scroll        { animation: heroFade   0.8s var(--ease-out) 1
 }
 .pf-card:hover {
   box-shadow: 0 24px 60px -16px rgba(0,0,0,0.18), 0 4px 14px rgba(0,0,0,0.06);
-  border-color: rgba(37,99,235, 0.35);
+  border-color: color-mix(in srgb, var(--card-accent, #2563EB) 45%, transparent);
 }
 
 /* Project number watermark on the card edge */
@@ -874,7 +874,7 @@ body.entrance .hero-scroll        { animation: heroFade   0.8s var(--ease-out) 1
   pointer-events: none;
   transition: color 0.25s var(--ease-out);
 }
-.pf-card:hover::before { color: var(--blue); }
+.pf-card:hover::before { color: var(--card-accent, var(--blue)); }
 
 .pf-thumb-wrap {
   position: relative;
@@ -905,7 +905,6 @@ body.entrance .hero-scroll        { animation: heroFade   0.8s var(--ease-out) 1
 .pf-meta {
   padding: 24px 26px 30px;
   display: flex; flex-direction: column; gap: 12px;
-  background: #fff;
 }
 .pf-meta-top {
   display: flex; align-items: center; justify-content: space-between;
@@ -930,7 +929,7 @@ body.entrance .hero-scroll        { animation: heroFade   0.8s var(--ease-out) 1
   border-radius: 2px;
   transition: background 0.25s var(--ease-out), color 0.25s var(--ease-out);
 }
-.pf-card:hover .pf-tag { background: var(--blue); color: #fff; }
+.pf-card:hover .pf-tag { background: var(--card-accent, var(--blue)); border-color: var(--card-accent, var(--blue)); color: #fff; }
 
 .pf-title {
   font-size: 1.4rem;

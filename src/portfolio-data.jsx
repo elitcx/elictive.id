@@ -136,6 +136,7 @@ function ThumbBengkel() {
 export const PROJECTS = [
   {
     thumb: ThumbWarung,
+    accent: '#e4b863',
     id: {
       tag: 'BRANDING',
       title: 'Warung Bu Sari',
@@ -151,6 +152,7 @@ export const PROJECTS = [
   },
   {
     thumb: ThumbLaundry,
+    accent: '#2563EB',
     id: {
       tag: 'BRANDING',
       title: 'Laundry Express',
@@ -166,6 +168,7 @@ export const PROJECTS = [
   },
   {
     thumb: ThumbBatik,
+    accent: '#daa520',
     id: {
       tag: 'DESAIN IG',
       title: 'Toko Batik Sekar',
@@ -181,6 +184,7 @@ export const PROJECTS = [
   },
   {
     thumb: ThumbBengkel,
+    accent: '#2563EB',
     id: {
       tag: 'WEBSITE',
       title: 'Bengkel Motor Pak Joko',

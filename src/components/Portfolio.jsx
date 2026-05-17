@@ -13,7 +13,7 @@ function Thumb({ thumb }) {
   return <Component />;
 }
 
-function PortfolioCard({ project, thumb, index, total }) {
+function PortfolioCard({ project, thumb, index, total, accent }) {
   const [revealRef, inView] = useInView();
   const thumbWrapRef = useRef(null);
   const { c } = useLang();
@@ -38,6 +38,7 @@ function PortfolioCard({ project, thumb, index, total }) {
       ref={revealRef}
       className={`pf-card reveal d${delay} ${inView ? 'in' : ''}`}
       data-no={no}
+      style={accent ? { '--card-accent': accent } : undefined}
     >
       <div className="pf-thumb-wrap" ref={thumbWrapRef} onMouseMove={handleMouseMove}>
         <Thumb thumb={thumb} />
@@ -81,6 +82,7 @@ export function Portfolio() {
               key={p[lang]?.title ?? i}
               project={p[lang] ?? p.en}
               thumb={p.thumb}
+              accent={p.accent}
               index={i}
               total={total}
             />
